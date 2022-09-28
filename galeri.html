@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    
+    <title>Галерея</title>
+
+    <link rel="stylesheet" href="css/styles.css">
+   
+    <script type="text/javascript">
+        function openImageWindow(src) {
+          var image = new Image();
+          image.src = src;
+          var width = image.width;
+          var height = image.height;
+          window.open(src,"Image","width=" + width + ",height=" + height);
+        }
+    </script>
+
+
+</head>
+
+
+<body>
+    <div class="container">
+        <div class="oll">
+            <div class="ogo">
+                <form method="LINK" action="index.html">
+		             <input type="image" src="content/logo.png" width="100px" value="#" alt="Кнопка «Home»">
+                </form>
+                <!-- <img src="logo.png" alt="лого" class="logo" onclick='openImageWindow(this.src);' > -->
+            </div>
+    
+        
+            <div class="gl">
+
+                <p> <img src="content/1.jpg" alt="foto"  class="foto1" onclick='openImageWindow(this.src);'></p>
+                                
+                <p> <img src="content/11.jpg" alt="foto" class="foto1" onclick='openImageWindow(this.src);'></p>
+                
+                <p> <img src="content/2.jpg" alt="foto" class="foto1" onclick='openImageWindow(this.src);'></p>
+            
+                <p> <img src="content/3.jpg" alt="foto" class="foto1" onclick='openImageWindow(this.src);'></p>
+                
+                <p > 
+                    <img src="content/content/4.jpg" alt="foto" class="foto1" onclick='openImageWindow(this.src);'>
+                </p>
+                
+                <p> <img src="content/5.jpg" alt="foto" class="foto1" onclick='openImageWindow(this.src);'></p>
+                
+                <p> <img src="content/6.jpg" alt="foto" class="foto1" onclick='openImageWindow(this.src);'></p>
+                
+                <p> <img src="content/7.jpg" alt="foto" class="foto1" onclick='openImageWindow(this.src);'></p>
+                
+                <p> <img src="content/8.jpg" alt="foto" class="foto1" onclick='openImageWindow(this.src);'></p>
+                
+                <p> <img src="content/9.jpg" alt="foto" class="foto1" onclick='openImageWindow(this.src);'></p>
+                            
+                <p> <img src="content/26.jpg" alt="foto" class="foto1" onclick='openImageWindow(this.src);'></p>
+                
+                <p  class="vertical"> 
+                   <img src="content/12.jpg" alt="foto" class="foto1" onclick='openImageWindow(this.src);'>
+                </p>
+                <div class="up">
+                    <a href="#" title="Вернуться к началу" class="topbutton" >^Наверх</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
