@@ -1,0 +1,296 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap'); */
+
+/* Указываем box sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Убираем внутренние отступы */
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+/* Убираем внешние отступы */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Выставляем основные настройки по-умолчанию для body */
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+/* Элементы a, у которых нет класса, сбрасываем до дефолтных стилей */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Упрощаем работу с изображениями */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Указываем понятную периодичность в потоке данных у article*/
+article > * + * {
+  margin-top: 1em;
+}
+
+/* Наследуем шрифты для инпутов и кнопок */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Удаляем все анимации и переходы для людей, которые предпочитай их не использовать */
+/* @media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+} */
+
+
+
+
+/* Мои стили */
+ 
+.container {
+    max-width: 1365px;
+    font-family: 'Roboto', sans-serif;
+    font-size: .75rem;
+    margin: 0px auto;
+    text-decoration: none;
+
+}
+.container a{
+  text-decoration: none;
+  
+}
+
+
+/* Хедер */
+
+.heder {position: fixed;
+    left: 0;
+    right: 0;
+   max-width: 1365px;
+   margin: 0px auto;
+   width: 100%;
+   z-index: 50;
+  }
+.header__container{
+   background-color: rgb(255, 255, 255);
+}
+
+.header__body {
+    margin: 0px 10%;
+    display: flex;
+    justify-content: space-between;
+    height:105px;
+    align-items: center;
+    font-weight: 700;
+}
+
+.header__list {
+    display: flex;
+}
+
+
+.header__list a:hover {
+  color: rgb(17, 200, 195);
+}
+
+.header__list li{
+    margin: 0px 0px 0px 20px;
+}
+
+.header__link {
+  transition: all .2s ease-out;
+ padding: 50px 0px;
+}
+
+/* Текст */
+
+.text {
+    display: inline-block ;
+    width: 100%;
+    margin-top: 105px;
+    background-color: rgb(246, 246, 246) ;
+    text-align: center;  
+}
+.text__content{
+    max-width:350px;
+    margin: 0px auto;   
+    padding: 10% 0;
+}
+.text__content h1{
+    margin-bottom: 3%;
+}
+
+.text__content p{
+color: rgb(131,131,131);
+}
+
+/* Работы */
+
+.work {
+width: 100%;
+margin: 0px auto;
+/* min-width:658px; */
+}
+
+.work__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+
+   
+}
+.grid-container1 {
+  background-color: rgb(131 131 131);
+  order: 1
+}
+.grid-container2{
+  background-color: rgb(221 221 221);
+order: 5;
+}
+.grid-container3{
+  background-color: rgb(131 131 131);
+  order: 9;
+}
+.grid-container4{
+  background-color: rgb(221 221 221);
+order: 2;
+}
+.grid-container5{
+  background-color: rgb(131 131 131);
+  order: 6;
+}
+.grid-container6{
+  background-color: rgb(221 221 221);
+order: 10;
+}
+.grid-container7{
+  background-color: rgb(131 131 131);
+  order: 3;
+}
+.grid-container8{
+  background-color: rgb(221 221 221);
+order: 7;
+}
+.grid-container9{
+  background-color: rgb(131 131 131);
+  order: 11;
+}
+.grid-container10{
+  background-color: rgb(221 221 221);
+order: 4;
+}
+.grid-container11{
+  background-color: rgb(131 131 131);
+  order: 8;
+}
+.grid-container12{
+  background-color: rgb(221 221 221);
+order: 12;
+}
+
+ 
+.foto img{
+  
+    width: 100%;
+    height: 100%;
+}    
+
+
+.top {
+  opacity: .7;
+}
+
+.bac {
+  box-shadow:
+  inset 0 -7em 7em rgba(0,0,0,0.1),
+        /* 0 0  0 2px rgb(255,255,255), */
+        0.7em 0.7em 2em rgba(0,0,0,0.3); 
+margin-top: -100%;  
+left: 0px;
+opacity: 0;
+
+}
+
+.proba:hover .bac{
+    opacity: .6;
+transition: all .3s ease-out;
+}
+
+/* Футер */
+
+.footer {
+  max-width: 1365px;
+  
+  margin: 0px auto;
+  display: flex;
+    justify-content: space-between;
+    background-color: rgb(20, 20, 20);
+    color: rgb(131,131,131);
+    
+}
+.footer a{
+  color: rgb(131,131,131);
+transition: all .3s ease-out;
+}
+
+
+.footer__content {
+  width: 100%;
+  margin: 7% 10%;
+ min-width: 660px;
+  display: flex;
+    justify-content: space-between;
+    align-items: top;
+    font-weight: 700;
+    
+}
+
+.footer__content a:hover {
+  color: rgb(17, 200, 195);
+}  
+.general {
+  margin-right: 7%;
+}
+
+.basic {
+  width: 15%;
+  display: flex ;
+  justify-content: space-between;
+    align-items: center;
+}
