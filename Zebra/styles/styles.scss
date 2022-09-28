@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+.container {
+    width: 1280px;
+    background-color: #997777;
+    margin: auto;
+}
+
+
+.dropbtn {
+    background-color: #fefffe;
+    color: rgb(134, 134, 134);
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    
+}
+
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 100px;
+    box-shadow: 0px 0px px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    background-color: #b63737;
+    color: rgb(255, 255, 255);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    width: 100px
+    // font-family: inherit
+    }
+
+
+
+.dropdown-content a:hover {color: black}  
+
+.dropdown-content h1:hover {color: black, span {color:rgb(173, 109, 109) } 
+
+
+.list {
+    background-color: #b63737;
+}
+ 
+h1  span {
+    color: rgb(86, 156, 156);
+ } 
+
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #b63737;}
+
