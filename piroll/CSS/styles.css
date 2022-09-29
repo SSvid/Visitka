@@ -170,6 +170,7 @@ margin: 0px auto;
 }
 
 .work__grid {
+  widhd:100%
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
 
@@ -178,6 +179,7 @@ margin: 0px auto;
 .grid-container1 {
   background-color: rgb(131 131 131);
   order: 1
+    width:100%;
 }
 .grid-container2{
   background-color: rgb(221 221 221);
