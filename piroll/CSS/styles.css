@@ -178,14 +178,20 @@ margin: 0px auto;
    
 }
 .grid-container1 {
+  height: 150px;
+  width: 200px;
   background-color: rgb(131 131 131);
   order: 1
 }
 .grid-container2{
+  height: 150px;
+  width: 200px;
   background-color: rgb(221 221 221);
 order: 5;
 }
 .grid-container3{
+  height: 150px;
+  width: 200px;
   background-color: rgb(131 131 131);
   order: 9;
 }
