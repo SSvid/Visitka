@@ -230,6 +230,7 @@ h1 span {
         }
 
         .cirkl {
+            width:100%
             position: relative;
             margin: auto;
             top: -100px;   
