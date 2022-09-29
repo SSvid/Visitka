@@ -170,8 +170,6 @@ margin: 0px auto;
 }
 
 .work__grid {
-  widhd:100%
-    Height:100%
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
 
