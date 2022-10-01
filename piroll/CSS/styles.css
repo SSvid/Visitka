@@ -173,55 +173,47 @@ margin: 0px auto;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); 
 }
-
+@media (max-width: 1278px) {
+  .work__grid{
+    background-color:brown;
+  }
+}
 
 .grid-container1 {
   background-color: rgb(131 131 131);
-  order: 1
-}
+  }
 .grid-container2{
   background-color: rgb(221 221 221);
-order: 5;
 }
 .grid-container3{
   background-color: rgb(131 131 131);
-  order: 9;
-}
+  }
 .grid-container4{
   background-color: rgb(221 221 221);
-order: 2;
 }
 .grid-container5{
-  background-color: rgb(131 131 131);
-  order: 6;
-}
-.grid-container6{
   background-color: rgb(221 221 221);
-order: 10;
+  }
+.grid-container6{
+  background-color: rgb(131 131 131);
 }
 .grid-container7{
-  background-color: rgb(131 131 131);
-  order: 3;
-}
-.grid-container8{
   background-color: rgb(221 221 221);
-order: 7;
+  }
+.grid-container8{
+  background-color: rgb(131 131 131);
 }
 .grid-container9{
   background-color: rgb(131 131 131);
-  order: 11;
-}
+  }
 .grid-container10{
   background-color: rgb(221 221 221);
-order: 4;
 }
 .grid-container11{
   background-color: rgb(131 131 131);
-  order: 8;
-}
+  }
 .grid-container12{
   background-color: rgb(221 221 221);
-order: 12;
 }
 
  
@@ -250,6 +242,92 @@ opacity: 0;
 .proba:hover .bac{
     opacity: .6;
 transition: all .3s ease-out;
+}
+
+@media (max-width: 1278px) {
+  .work__grid{
+    display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  }
+  .grid-container1 {
+    background-color: rgb(131 131 131);
+      }
+  .grid-container2{
+    background-color: rgb(221 221 221);
+    }
+  .grid-container3{
+    background-color: rgb(131 131 131);
+      }
+  .grid-container4{
+    background-color: rgb(221 221 221);
+    }
+  .grid-container5{
+    background-color: rgb(131 131 131);
+      }
+  .grid-container6{
+    background-color: rgb(221 221 221);
+    }
+  .grid-container7{
+    background-color: rgb(131 131 131);
+      }
+  .grid-container8{
+    background-color: rgb(221 221 221);
+    }
+  .grid-container9{
+    background-color: rgb(131 131 131);
+      }
+  .grid-container10{
+    background-color: rgb(221 221 221);
+    }
+  .grid-container11{
+    background-color: rgb(131 131 131);
+      }
+  .grid-container12{
+    background-color: rgb(221 221 221);
+    }
+}
+
+@media (max-width:767px) {
+  .work__grid{
+    display: grid;
+  grid-template-columns: 1fr 1fr ;
+   }
+   .grid-container1 {
+    background-color: rgb(131 131 131);
+      }
+  .grid-container2{
+    background-color: rgb(221 221 221);
+    }
+  .grid-container3{
+    background-color: rgb(221 221 221);
+      }
+  .grid-container4{
+    background-color: rgb(131 131 131);
+    }
+  .grid-container5{
+    background-color: rgb(131 131 131);
+      }
+  .grid-container6{
+    background-color: rgb(221 221 221);
+    }
+  .grid-container7{
+    background-color: rgb(221 221 221);
+      }
+  .grid-container8{
+    background-color: rgb(131 131 131);
+    }
+  .grid-container9{
+    background-color: rgb(131 131 131);
+      }
+  .grid-container10{
+    background-color: rgb(221 221 221);
+    }
+  .grid-container11{
+    background-color: rgb(221 221 221);
+      }
+  .grid-container12{
+    background-color: rgb(131 131 131);
+    }
 }
 
 /* Футер */
