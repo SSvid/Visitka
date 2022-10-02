@@ -140,7 +140,7 @@ select {
     text-align: center;  
 }
 .text__content{
-    max-width:350px;
+    max-width:55%;
     margin: 0px auto;   
     padding: 10% 0;
 }
