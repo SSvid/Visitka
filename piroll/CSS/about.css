@@ -1,0 +1,432 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap'); */
+
+/* Указываем box sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Убираем внутренние отступы */
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+/* Убираем внешние отступы */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Выставляем основные настройки по-умолчанию для body */
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+/* Элементы a, у которых нет класса, сбрасываем до дефолтных стилей */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Упрощаем работу с изображениями */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Указываем понятную периодичность в потоке данных у article*/
+article > * + * {
+  margin-top: 1em;
+}
+
+/* Наследуем шрифты для инпутов и кнопок */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+
+
+
+
+/* Мои стили */
+ 
+.container {
+    max-width: 1365px;
+    min-width: 320px;
+    
+    font-family: 'Roboto', sans-serif;
+    font-size: calc(10px + 8 * (100vw / 1365));
+    margin: 0px auto;
+    text-decoration: none;
+
+}
+.container a{
+  text-decoration: none;
+  
+}
+
+
+/* Хедер */
+
+.heder {position: fixed;
+    left: 0;
+    right: 0;
+   max-width: 1365px;
+   margin: 0px auto;
+   width: 100%;
+   z-index: 50;
+  }
+.header__container{
+   background-color: rgb(255, 255, 255);
+}
+
+.header__body {
+    margin: 0px 10%;
+    display: flex;
+    justify-content: space-between;
+    height:105px;
+    align-items: center;
+    font-weight: 700;
+}
+
+.header__list {
+    display: flex;
+}
+
+.header__list a:hover {
+  color: rgb(17, 200, 195);
+}
+
+.header__list li{
+    margin: 0px 0px 0px 20px;
+}
+
+.header__link {
+  transition: all .2s ease-out;
+ padding: 50px 0px;
+}
+
+.header__link1{
+  color: rgb(17, 200, 195); 
+}
+
+
+/* Банер */
+.baner {
+  position: relative;
+  top: 105px;
+max-width: 1365px;
+height: 350px;
+background-color: rgb(62, 62, 62);
+text-align: center;
+
+}
+
+.baner__content {
+  max-width: 1365px;
+  height: 100%;
+  
+  background-image: url(/CONTENT/amelia.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: top center;
+  opacity: .8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  
+}
+
+.text__content  {
+  max-width: 41%;
+  /* color: rgb(16, 201, 195); */
+  text-shadow:
+    1px 1px 0 gray,
+    1px -1px 0 gray,
+    -1px 1px 0 gray,
+    -1px -1px 0 gray;
+  color: white;
+} 
+
+/* EMPTY */
+.empty{
+  max-width: 1365px;
+  height: 105px;
+}
+
+
+ /* NUMBERS */
+ .num {width: 100%;
+  /* position: relative; */
+  /* top: 105px; */
+  background-color: rgb(16, 201, 195);
+}
+
+.num__content {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+}
+
+.num__blok {
+display: flex;
+justify-content: space-between;
+max-width: 20%;
+min-width: 70px;
+margin: 7% 3.5%;
+color: white;
+line-height: 1;
+}
+
+.num__blok img{
+  margin-right: 5px;
+}
+
+.cifr{
+  font-weight: 700; 
+}
+
+
+/* ABOUT */
+.about {
+max-width: 1365px;
+/* position: relative; */
+/* top: 105px; */
+display: flex;
+background-color: rgb(245 245 245)
+}
+
+.about__img {
+width: 50%;
+height: 20%;
+background-color: rgb(120 120 120);
+}
+
+.about__text {
+width: 50%;
+line-height: 1.3;
+margin: auto 0px;
+margin-left: 5%;
+margin-right: 8%;
+padding: 1% 0px;
+padding-top: 4%;
+;
+
+}
+.about__text p{
+  min-width: 30%px;
+  padding: 2% 0px;
+  color: rgb(120 120 120);
+}
+
+.signatur {
+padding-top: 2%;
+}
+
+/* NEED */
+.need {
+max-width: 1365px;
+/* height: 300px; */
+/* position: relative; */
+/* top: 105px; */
+text-align: center;
+
+}
+
+.need__content {
+  
+max-width: 50%;
+margin: 2% auto;
+padding: 5% 0px;
+
+}
+
+.need__content p{
+color: rgb(120 120 120); 
+padding: 7% 0px; 
+}
+
+
+  .btn {
+    background-color: rgb(16, 201, 195);
+    padding: 16px 60px;
+    color: #fff;
+    border: none;
+    font-family: inherit;
+    cursor: pointer;
+    /* border-radius: 10%; */
+   }
+
+   .btn:hover {
+    opacity: 0.5;
+    transition: all .2s ease-out;
+
+   }
+
+/* Футер */
+
+.footer {
+  /* position: relative; */
+  /* top: 105px; */
+  max-width: 1365px;
+  margin: 0px auto;
+  display: flex;
+    justify-content: space-between;
+    background-color: rgb(20, 20, 20);
+    color: rgb(131,131,131);
+    
+}
+.footer a{
+color: rgb(131,131,131);
+transition: all .3s ease-out;
+}
+
+.footer__content {
+  width: 100%;
+  margin: 7% 10%;
+  /* min-width: 660px; */
+  display: flex;
+  justify-content: space-between;
+  align-items: top;
+  font-weight: 700;
+    
+}
+
+.adaptiv {
+  width: 70%;
+  display: flex;
+}
+.adaptiv1{
+  min-width: 30%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__content a:hover {
+  color: rgb(17, 200, 195);
+}  
+.general {
+  width: 40%;
+  margin-right: 20%;
+}
+
+.basic {
+  min-width:60%;
+  /* max-width: 150px; */
+  display: flex ;
+  justify-content: space-between;
+  align-items: top;
+}
+
+/* ADAPTIV */
+@media (max-width: 1278px) {
+  
+  .footer__content {
+   width: 100%;
+   margin: 5% 7%;}
+}
+
+@media (max-width:767px) {
+  .about{
+    display: block;
+    width: 100%;
+    }
+  .about__img{
+    width: 100%;
+  }  
+  .about__text{
+    margin: auto;
+    width: 55%;
+  }
+  .about__text h1{
+    text-align: center;
+  }
+    .text__content{
+    max-width:400px;}
+    .adaptiv {
+     width: 40%;
+     display: block;
+    } 
+    .adaptiv1{
+      min-width: 50%;
+    }
+    .general {
+     min-width: 150px;
+     margin-bottom: 10%;
+    }
+    .basic {
+      width: 25%;} 
+   .footer__content {
+     width: 100%;
+     margin: 5% 7%;}  
+
+    .num{
+     padding: 0px 10%;
+    }  
+}
+
+
+@media (max-width:469px) {
+
+  .baner__content{
+    background-size:cover;
+  }
+  .adaptiv1{
+    min-width: 35%;
+    display: block;
+    text-align: center;
+    }
+  .basic{
+   width: 100%;
+    margin-bottom:12%;
+    } 
+
+   .right{
+    padding-left: 10px;
+   } 
+ 
+  .num{
+    min-width: 320px;
+    padding: 0px 10%;
+  }
+
+  .footer__content {
+    width: 100%;
+    margin: 5% 10%;}
+    
+  .num__blok{
+    display: block;
+    margin: 5% auto;
+  }
+  .num__blok img{
+    padding-bottom: 5px;
+  }
+
+}
