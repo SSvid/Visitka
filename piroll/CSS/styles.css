@@ -130,6 +130,10 @@ select {
  padding: 50px 0px;
 }
 
+.header__link1{
+  color: rgb(17, 200, 195); 
+}
+
 /* Текст */
 
 .text {
