@@ -276,6 +276,9 @@ transition: all .3s ease-out;
   width: 40%;
   margin-right: 20%;
 }
+.general h2{
+    color: white ;
+  }
 
 .basic {
   min-width:60%;
