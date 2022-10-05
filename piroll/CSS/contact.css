@@ -359,15 +359,7 @@ padding: 0 9%;
      .footer__content {
        width: 100%;
        margin: 5% 7%;}  
-  @media screen and (orientation: landscape){
-        .heder {
-            position: relative;
-        }
-        .empty{
-            height: 0;
-        }
-      }
-      
+       
   }
   
   
@@ -399,14 +391,7 @@ padding: 0 9%;
       width: 100%;
       margin: 5% 10%;}
     
-      @media screen and (orientation: landscape){
-        .heder {
-            position: relative;
-        }
-        .empty{
-            height: 0;
-        }
-      }     
+      
   }
 
 
