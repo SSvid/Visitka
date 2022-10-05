@@ -393,3 +393,12 @@ padding: 0 9%;
       margin: 5% 10%;}
            
   }
+
+ @media screen and (orientation: landscape){
+    .header {
+        position: static;
+    }
+    .empty{
+        height: 0;
+    }
+  }
