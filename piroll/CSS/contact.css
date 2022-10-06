@@ -217,12 +217,14 @@ select {
    }
 
    .row {
-    display: flex; 
+    width: 100%;
+    display: flex;
+    justify-content: space-between; 
    }
 
    .row > .form-group {
-    width: 50%;
-    margin-right: 4.5%;
+    width: 47.5%;
+    
    }
    
    .row > .form-group last-child {
