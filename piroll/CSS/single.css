@@ -1,0 +1,367 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap'); */
+
+/* Указываем box sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Убираем внутренние отступы */
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+/* Убираем внешние отступы */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Выставляем основные настройки по-умолчанию для body */
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+/* Элементы a, у которых нет класса, сбрасываем до дефолтных стилей */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Упрощаем работу с изображениями */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Указываем понятную периодичность в потоке данных у article*/
+article > * + * {
+  margin-top: 1em;
+}
+
+/* Наследуем шрифты для инпутов и кнопок */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+
+
+
+
+/* Мои стили */
+ 
+.container {
+    max-width: 1365px;
+    min-width: 320px;
+    
+    font-family: 'Roboto', sans-serif;
+    font-size: calc(10px + 8 * (100vw / 1365));
+    margin: 0px auto;
+    text-decoration: none;
+
+}
+.container a{
+  text-decoration: none;
+  
+}
+
+
+/* Хедер */
+
+.heder {position: fixed;
+    left: 0;
+    right: 0;
+   max-width: 1365px;
+   margin: 0px auto;
+   width: 100%;
+   z-index: 50;
+  }
+.header__container{
+   background-color: rgb(255, 255, 255);
+}
+
+.header__body {
+    margin: 0px 10%;
+    display: flex;
+    justify-content: space-between;
+    height:105px;
+    align-items: center;
+    font-weight: 700;
+}
+
+.header__list {
+    display: flex;
+}
+
+.header__list a:hover {
+  color: rgb(17, 200, 195);
+}
+
+.header__list li{
+    margin: 0px 0px 0px 20px;
+}
+
+.header__link {
+  transition: all .2s ease-out;
+ padding: 50px 0px;
+}
+
+.header__link1{
+  color: rgb(17, 200, 195); 
+}
+
+
+/* EMPTY */
+.empty{
+    max-width: 1365px;
+    height: 105px;
+  }
+
+  /* SINGL  */
+  .singl {
+max-width: 1365px;
+display: flex;
+max-height: 570px;
+overflow: hidden;
+
+}
+
+.singl__text {
+position: relative;    
+width: 50%;
+height:  41.75vw;
+padding: 3vw 6vw;
+background-color: rgb(246 246 246);
+color: rgb(120 120 120);
+}
+.singl__text h1, h4{
+color: black;    
+}
+
+.singl__text p{
+margin-bottom: 1vw;
+}
+
+.adres {
+display: flex;
+padding: .5vw 0;
+}
+.adres h4{
+margin-right: 1.5%;    
+}  
+.adres a{
+margin-right: 1.5%;  
+color: rgb(120 120 120); 
+}  
+.adres a:hover {
+    color: rgb(17, 200, 195);
+    transition: all .2s ease-out;
+}
+.adres p{
+font-size: 14px;  
+}
+
+
+
+.singl__img {
+width: 50%;
+height: 41.45vw;
+background-color: rgb(230 230 230);
+}
+
+/* SWITH */
+.swith{
+width: 100%;
+height: 20%;
+padding: 4vw 8vw;
+/* background-color: aqua; */
+    
+}
+.swith__text{
+display: flex;
+justify-content: space-between;  
+
+}
+.swith__text a{
+color: rgb(120 120 120);
+font-weight: 700;
+}
+.sw a:hover {
+    color: rgb(17, 200, 195);
+    transition: all .2s ease-out;
+}
+.swith img{
+width: 20px;
+height: 20px;
+}
+
+/* Футер */
+
+.footer {
+    /* position: relative; */
+    /* top: 105px; */
+    max-width: 1365px;
+    margin: 0px auto;
+    display: flex;
+      justify-content: space-between;
+      background-color: rgb(20, 20, 20);
+      color: rgb(131,131,131);
+      
+  }
+  .footer a{
+  color: rgb(131,131,131);
+  transition: all .3s ease-out;
+  }
+  
+  .footer__content {
+    width: 100%;
+    margin: 7% 10%;
+    /* min-width: 660px; */
+    display: flex;
+    justify-content: space-between;
+    align-items: top;
+    font-weight: 700;
+      
+  }
+  
+  .adaptiv {
+    width: 70%;
+    display: flex;
+  }
+  .adaptiv1{
+    min-width: 30%;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .footer__content a:hover {
+    color: rgb(17, 200, 195);
+  }  
+  .general {
+    width: 40%;
+    margin-right: 20%;
+  }
+  .general h2{
+    color: white ;
+  }
+  
+  .basic {
+    min-width:60%;
+    /* max-width: 150px; */
+    display: flex ;
+    justify-content: space-between;
+    align-items: top;
+  }
+  
+  /* ADAPTIV */
+  @media (max-width: 1278px) {
+    
+    .footer__content {
+     width: 100%;
+     margin: 5% 7%;}
+  }
+
+  @media (max-width:877px) {
+    .singl__text p{
+        margin-bottom: 0;}
+    .adres{
+        padding: 0;
+    }
+
+  }
+  
+  @media (max-width:767px) {
+      .singl{
+        display: block;
+        width: 100%;
+        max-height: 100%;
+      } 
+      .singl__text{
+        width: 100%;
+        height: 100%;
+      }
+      .singl__img{     
+        width: 100%; 
+        height: 100%; 
+      }
+      .adaptiv {
+       width: 40%;
+       display: block;
+      } 
+      .adaptiv1{
+        min-width: 50%;
+      }
+      .general {
+       min-width: 150px;
+       margin-bottom: 10%;
+      }
+      .basic {
+        width: 25%;} 
+     .footer__content {
+       width: 100%;
+       margin: 5% 7%;} 
+
+       @media screen and (orientation: landscape){
+        .heder {
+            position: relative;
+        }
+        .empty{
+            height: 0;
+        }
+      }
+      
+  }
+  
+  
+  @media (max-width:469px) {
+  
+    
+    .adaptiv1{
+      min-width: 35%;
+      display: block;
+      text-align: center;
+      }
+    .basic{
+     width: 100%;
+      margin-bottom:12%;
+      } 
+    
+    .footer__content {
+      width: 100%;
+      margin: 5% 10%;}
+
+      @media screen and (orientation: landscape){
+        .heder {
+            position: relative;
+        }
+        .empty{
+            height: 0;
+        }
+         }     
+  }   
+  
