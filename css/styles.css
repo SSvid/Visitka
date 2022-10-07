@@ -371,6 +371,7 @@
     .location-image img {
       filter: blur(0px);
       transition: filter 0.3s ease-in;
+        aspect-ratio: 4/3;
     }
      
     .location-listing:hover .location-image img {
