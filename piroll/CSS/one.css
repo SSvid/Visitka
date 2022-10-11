@@ -140,7 +140,7 @@ padding: 100% 0 0 0;
 .baner {
 width: 100%;
 height: 48.5vw;
-background-image: url(/CONTENT/bak.png); 
+background-image: url(CONTENT/bak.png); 
 background-size: contain;
 background-repeat: no-repeat;  
 /* background-size: 100% 100%; */
